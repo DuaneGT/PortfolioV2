@@ -11,8 +11,9 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out",
+    "export": "next export"
   },
   "dependencies": {
     "@genkit-ai/googleai": "^1.14.1",
