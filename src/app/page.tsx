@@ -93,7 +93,7 @@ export default function Home() {
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
       <Header />
       <main className="flex-1">
-        <section id="hero" className="relative h-[400px] flex items-center justify-center text-center text-white">
+        <section id="hero" className="relative h-[400px] flex items-center justify-center text-center text-primary-foreground">
           <Image
             src="https://placehold.co/1200x400.png"
             alt="Hero background"
@@ -222,7 +222,7 @@ export default function Home() {
                       )}
                     />
                     <div className="text-right">
-                       <Button type="submit" disabled={form.formState.isSubmitting} className="bg-accent text-accent-foreground hover:bg-accent/90">
+                       <Button type="submit" disabled={form.formState.isSubmitting} className="bg-primary text-primary-foreground hover:bg-primary/90">
                          {form.formState.isSubmitting ? (
                            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                          ) : (
