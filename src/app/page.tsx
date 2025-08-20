@@ -93,6 +93,18 @@ export default function Home() {
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
       <Header />
       <main className="flex-1">
+        <section id="hero" className="relative h-[400px] flex items-center justify-center text-center text-white">
+          <Image
+            src="https://placehold.co/1200x400.png"
+            alt="Hero background"
+            fill
+            className="object-cover"
+            data-ai-hint="developer desk"
+          />
+          <div className="relative z-10 bg-black bg-opacity-50 p-8 rounded-lg">
+            <h1 className="text-4xl md:text-6xl font-bold">Hello world, I'm Veridian</h1>
+          </div>
+        </section>
         <div className="container mx-auto px-4 py-12 md:py-20">
           <section id="about" className="mb-20 md:mb-28 text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 font-headline text-primary">A Multi-Faceted Developer</h1>
@@ -230,3 +242,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
